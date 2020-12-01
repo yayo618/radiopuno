@@ -1,20 +1,36 @@
 <html>
+  <head>
+    <title>Portal - Radio Puno</title>
+    <style>
+      body {
+        background-image:url(img/header.jpg);
+        background-repeat:repeat-x;
+      }
+      .box {
+	//box-sizing: border-box;
+	margin:auto;
+	width:50%;
+	padding:100px;
+	text-align:center;
+	border:3px solid green;
+      }
+    </style>
+  </head>
   <body>
-    <h1>istashion</h1>
-    <!--
-    <audio controls src="http://conectperu.com:8082/stream"></audio>
-    -->
-    <iframe autoplay id="radio" src="https://sonicpanel.cloudstreaming.eu/8004/stream"></iframe>
-	    </br>
-    <div>
-      <button onclick="document.getElementById('radio').play()">PLAY</button>
-      <button onclick="document.getElementById('radio').pause()">Pause</button>
-      <button onclick="document.getElementById('radio').volume += 0.2">Vol+</button>
-      <button onclick="document.getElementById('radio').volume -= 0.2">Vol-</button>
+    <div class="box">
+      <img src="img/logo.png">
+      <audio autoplay id="radio" src="https://sonicpanel.cloudstreaming.eu/8004/stream"></audio>
+      <div>
+        <button onclick="document.getElementById('radio').play()">PLAY</button>
+        <button onclick="document.getElementById('radio').pause()">Pause</button>
+        <button onclick="document.getElementById('radio').volume += 0.2">Vol+</button>
+        <button onclick="document.getElementById('radio').volume -= 0.2">Vol-</button>
+      </div>
     </div>
-<!--
-    <audio id="stream" controls preload="none" style="width: 400px;"><source src="https://sonicpanel.cloudstreaming.eu/8004/stream" type="audio/mpeg"></audio>
--->
-<iframe style="border: none;"  width="100%" height="110" scrolling="no" src="https://conectperu.com/cp/widgets/player/single/?p=8082" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></iframe>
+    <script>
+      function myFun(){
+	var xx = document.getElementById('radio').autoplay;
+      }
+    </script>
   </body>
 </html>
