@@ -23,11 +23,21 @@
       <div>
         <button onclick="document.getElementById('radio').play()">PLAY</button>
         <button onclick="document.getElementById('radio').pause()">Pause</button>
-        <button onclick="document.getElementById('radio').volume += 0.2">Vol+</button>
-        <button onclick="document.getElementById('radio').volume -= 0.2">Vol-</button>
+      </div>
+      <div class="slidecontainer">
+        <input type="range" min="1" max="100" value="100" class="slider" id="myRange">
+	<p style="color:white;">Volume: <span id="demo"></span></p>
       </div>
     </div>
     <script>
+      var slider = document.getElementById('myRange');
+      var output = document.getElementById('demo');
+      var radio = document.getElementById('radio');
+      output.innerHTML = slider.value;
+      slider.oninput = function() {
+	output.innerHTML = this.value;
+	radio.volume = this.value / 100;
+      }
       function myFun(){
 	var xx = document.getElementById('radio').autoplay;
       }
