@@ -1,40 +1,46 @@
 <html>
   <head>
     <title>Portal - Radio Puno</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.5">
     <style>
+      *{margin:0px; padding:0px;}
       body {
         background-image:url(img/header.jpg);
         background-repeat:repeat-x;
       }
       .box {
 	box-sizing: border-box;
-	width:50%;
-	margin:auto;
-	padding:100px;
+	width:100%;
+	margin:0px auto;
 	text-align:center;
 	//border:3px solid green;
 	
       }
-      .butt {padding:20px;}
+      .butt {
+	//border:2px solid blue; 
+	width:100%;
+	padding-top:25px;
+	padding-bottom:25px;
+      }
       .but1 {
 	  height:55px;
 	  width:105px;
 	  background-image:url("./img/play.jpg");
-	  border-radius:25%;
+	  border-radius:15%;
       }
       .but2 {
 	  height:55px;
 	  width:105px;
 	  background-image:url("./img/pause.jpg");
-	  border-radius:25%;
+	  border-radius:15%;
       }
     </style>
   </head>
   <body>
     <div class="box">
-      <img src="img/logo.png" style="margin-top:-50px;">
+      <img src="img/logo.png" style="padding-top:20px;">
       <audio autoplay id="radio">
-	<source src="https://sonicpanel.cloudstreaming.eu/8004/stream">
+	      <!--<source src="https://sonicpanel.cloudstreaming.eu/8004/stream">-->
       </audio>
       <div class="butt">
         <button class="but1" onclick="document.getElementById('radio').play()">
