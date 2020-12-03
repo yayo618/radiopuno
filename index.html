@@ -7,28 +7,49 @@
         background-repeat:repeat-x;
       }
       .box {
-	//box-sizing: border-box;
-	margin:auto;
+	box-sizing: border-box;
 	width:50%;
+	margin:auto;
 	padding:100px;
 	text-align:center;
-	border:3px solid green;
+	//border:3px solid green;
+	
+      }
+      .butt {padding:20px;}
+      .but1 {
+	  height:55px;
+	  width:105px;
+	  background-image:url("./img/play.jpg");
+	  border-radius:25%;
+      }
+      .but2 {
+	  height:55px;
+	  width:105px;
+	  background-image:url("./img/pause.jpg");
+	  border-radius:25%;
       }
     </style>
   </head>
   <body>
     <div class="box">
-      <img src="img/logo.png">
-      <audio autoplay id="radio" src="https://sonicpanel.cloudstreaming.eu/8004/stream"></audio>
-      <div>
-        <button onclick="document.getElementById('radio').play()">PLAY</button>
-        <button onclick="document.getElementById('radio').pause()">Pause</button>
+      <img src="img/logo.png" style="margin-top:-50px;">
+      <audio autoplay id="radio">
+	<source src="https://sonicpanel.cloudstreaming.eu/8004/stream">
+      </audio>
+      <div class="butt">
+        <button class="but1" onclick="document.getElementById('radio').play()">
+	</button>
+	&nbsp;
+        <button class="but2" onclick="document.getElementById('radio').pause()">
+	</button>
       </div>
       <div class="slidecontainer">
         <input type="range" min="1" max="100" value="100" class="slider" id="myRange">
 	<p style="color:white;">Volume: <span id="demo"></span></p>
       </div>
     </div>
+    </br>
+    <a href="raw.html">raw</a>
     <script>
       var slider = document.getElementById('myRange');
       var output = document.getElementById('demo');
@@ -39,7 +60,7 @@
 	radio.volume = this.value / 100;
       }
       function myFun(){
-	var xx = document.getElementById('radio').autoplay;
+	var auto = document.getElementById('radio').autoplay;
       }
     </script>
   </body>
