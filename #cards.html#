@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+  <body>
+    
+    <div class="row mx-md-n5">
+      <div class="col px-md-5">
+	<div class="card" style="width: 18rem;">
+	  <img src="img/05.jpg" class="card-img-top" alt="...">
+	  <div class="card-body"> <h5 class="card-title">Edwin Loza Huarachi</h5>
+	    <p class="card-text">
+	      Nacido en 1947 en la ciudad de Moho (Huancané, Puno).</p>
+
+	    <p> <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"> Ver más... </a> </p>
+	    <div class="collapse" id="collapseExample"> <div class="card card-body">Es uno de los Amautas de la Artesanía Peruana. Nacido en 1947 en la ciudad de Moho (Huancané, Puno), su pasión por las máscaras lo acompaña desde niño. Su trabajo ha trascendido fronteras y ha permitido la consolidación del arte… </div> </div>
+	  </div>
+	</div>
+      </div>
+      <div class="col px-md-5">
+	<div class="card" style="width: 18rem;">
+	  <img src="img/06.jpg" class="card-img-top" alt="...">
+	  <div class="card-body"> <h5 class="card-title">Benigno Aguilar Paucar</h5>
+	    <p class="card-text">
+	      Nació en Juli el 6 de febrero de 1949.</p>
+	    <a href="#" class="btn btn-primary">Go somewhere</a>
+	  </div>
+	</div>
+      </div>
+    </div>
+
+<div class="container"> <div class="row justify-content-start"> <div class="col-4"> One of two columns </div> <div class="col-4"> One of two columns </div> </div> <div class="row justify-content-center"> <div class="col-4"> One of two columns </div> <div class="col-4"> One of two columns </div> </div> <div class="row justify-content-end"> <div class="col-4"> One of two columns </div> <div class="col-4"> One of two columns </div> </div> <div class="row justify-content-around"> <div class="col-4"> One of two columns </div> <div class="col-4"> One of two columns </div> </div> <div class="row justify-content-between"> <div class="col-4"> One of two columns </div> <div class="col-4"> One of two columns </div> </div> </div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
