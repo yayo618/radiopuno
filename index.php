@@ -38,11 +38,10 @@
       nav{
 	  background:#292b2c;
 	  width:100%;
-	  height:75px;
-	  //line-height:25px;
+	  height:100px;
 	  color:white;
 	  margin-top:25px;
-	  padding-top:20px;
+	  //padding-top:20px;
 	  //padding-bottom:-10px;
       }
     </style>
@@ -65,11 +64,11 @@
 	<p style="color:white;">Volume: <span id="demo"></span></p>
       </div>
 
-      <nav><h2>Bienvenidos a Radio Puno</h2><p>Programador general: Andres Medina</p></nav>
+      <nav><h3 style="font-size:6vw; line-height:75px;">Bienvenidos a Radio Puno</h3><p style="font-size:3vw; margin-top:-20px;">Programador general: Andres Medina</p></nav>
     </div>
 
-    <iframe src="examples.html" width="100%" height="110%" frameBorder="0"></iframe>
-    
+	<?php include 'examples.html';?>    
+
     <script>
       var slider = document.getElementById('myRange');
       var output = document.getElementById('demo');
